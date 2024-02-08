@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --blue: rgb(10, 85, 213);
+  --white: #ffffff;
+}
+#root {
+  background-color: aquamarine;
+  /* flex: 1; */
+  /* height: 100%; */
+  display: flex;
+  height: 100vh;
+  /* overflow: auto; */
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  background-color: var(--white);
+  width: 50vw;
+  height: 60vh;
+  overflow: auto;
+  box-shadow: 2px 2px 7px #b1b1b1;
+  border-radius: 5px;
+  padding: 11px;
+}
+.add-top-category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.mr-2 {
+  margin-right: 1em;
+}
+
+.mt-1 {
+  margin-top: 0.5em;
+}
+.ml-4 {
+  margin-left: 1.5em;
+}
+.ml-1 {
+  margin-left: 0.5em;
+}
+.clild-section {
+  border-left: 1px solid var(--blue);
+}
+.fw-bold {
+  font-weight: bold;
+}
+
+.expend-collapse-button {
+  border-radius: 2em;
+  border: 0;
+  background-color: var(--blue);
+  color: var(--white);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.label {
+  font-size: 17px;
+  position: relative;
+  top: 5px;
+}
+.btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hover-controls:hover > .controls > a {
+  display: inline-block;
+}
+.controls > a {
+  font-size: smaller;
+  color: var(--blue);
+  margin-left: 10px;
+  display: none;
+}
+
+.blue-dash {
+  color: var(--blue);
+}
+
+.new-item {
+  animation: addNew 0.5s;
+}
+
+@keyframes addNew {
+  0% {
+    top: 0px;
+    left: 0px;
+    background: rgb(242, 238, 4);
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background: white;
+  }
+}
